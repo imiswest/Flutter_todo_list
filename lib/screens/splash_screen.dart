@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<bool> checkLogin() async { //비동기로 처리
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    //getInstanch()로 기기 내 shared_prefs 객체를 가져오고, isLogin이라는 이름으로 저장된 bool형태의값을 getBool로 가져옴
+    //getInstance()로 기기 내 shared_prefs 객체를 가져오고, isLogin이라는 이름으로 저장된 bool형태의값을 getBool로 가져옴
     bool isLogin = prefs.getBool('isLogin') ?? false;
     print('[*] isLogin :' + isLogin.toString());
     return isLogin;
