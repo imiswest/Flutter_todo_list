@@ -1,8 +1,9 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_todo_list/models/todo.dart';
 import 'package:flutter_todo_list/providers/todo_default.dart';
+
+// 한글 키보드 입력 되게 해야 함
 
 class ListScreen extends StatefulWidget {
   _ListScreenState createState() => _ListScreenState();
